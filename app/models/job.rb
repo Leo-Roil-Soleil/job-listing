@@ -1,3 +1,4 @@
 class Job < ApplicationRecord
-  scope :recent, -> { order('created_at DESC') }
+  
+scope :recent, -> { order('created_at DESC') }
 end
