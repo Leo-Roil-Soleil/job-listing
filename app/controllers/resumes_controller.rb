@@ -1,4 +1,3 @@
-class ResumesController < ApplicationController
   class ResumesController < ApplicationController
     before_action :authenticate_user!
 
@@ -27,4 +26,3 @@ class ResumesController < ApplicationController
       params.require(:resume).permit(:content, :attachment)
     end
   end
-end
